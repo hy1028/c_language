@@ -212,6 +212,8 @@ int main() {
 	for (i = 0; i < 5; i++) {
 		array[i] = i + 1;
 	}
+	//testtest
+	// e231234123
 	return 0;
 }
 #endif
