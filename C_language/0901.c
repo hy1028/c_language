@@ -213,7 +213,6 @@ int main() {
 		array[i] = i + 1;
 	}
 	//hayeon
-	//samsung test
 	return 0;
 }
 #endif
