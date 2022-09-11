@@ -204,7 +204,7 @@ int main() {
 }
 #endif 
 
-#if 1
+#if 0
 #include <stdio.h>
 
 int main() {
@@ -212,7 +212,37 @@ int main() {
 	for (i = 0; i < 5; i++) {
 		array[i] = i + 1;
 	}
-	//hayeon
+	return 0;
+}
+#endif
+
+#if 0
+#include <stdio.h>
+
+int main() {
+	char array[5] = "come";
+
+	printf("%s\n", array);
+	return 0;
+}
+#endif
+
+
+#if 0
+#include <stdio.h>
+
+int main() {
+	int i, num[10];
+
+	for (i = 0; i < 10; i++) {
+		printf("Input %d: ", i + 1);
+		scanf_s("%d", &num[i]);
+	}
+	printf("\nOUTPUT\n");
+	for (i = 0; i < 10; i++) {
+		printf("%d\t", num[i]);
+	}
+	printf("\n");
 	return 0;
 }
 #endif
