@@ -246,3 +246,60 @@ int main() {
 	return 0;
 }
 #endif
+
+#if 0
+#include <stdio.h>
+
+int main(void) {
+	char str1[7] = { 'K', 'O', 'R', 'E', 'A', '\0' };
+	char str2[6] = "KOREA";
+	char str3[] = "KOREA";
+	char alpha[] = { 'a', 'b', 'c', '\0', '1', '2', '3', '\0' };
+	printf("%s\n", alpha);
+	printf("%c\n", alpha[4]);
+	printf("%s\n", &alpha[4]);
+	printf("%d\n", alpha);
+	printf("%s %s %s\n", str1, str2, str3);
+
+	return 0;
+}
+#endif
+
+#if 0
+#include <stdio.h>
+
+int main() {
+	int ar[2][2] = { 1, 2, 3, 4 };
+	int br[2][2];
+
+	br[0][0] = 10;
+	br[0][1] = 10;
+	br[1][0] = 10;
+	br[1][1] = 10;
+	
+	return 0;
+}
+#endif
+
+#if 1
+#include <stdio.h>
+
+int main(void) {
+	int ar[3][4] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 4; j++) {
+			printf("ar[%d][%d] = %d\t", i, j, ar[i][j]);
+		}
+		printf("\n");
+	}
+	printf("sizeof(ar): %d\n", sizeof(ar));
+	printf("sizeof(ar[0]): %d\n", sizeof(ar[0]));
+	printf("sizeof(ar[0][0]): %d\n", sizeof(ar[0][0]));
+
+	printf("ar: 0x%x, ar[0]: 0x%x, &ar[0]: 0x%x\n", ar, ar[0], &ar[0][0]);
+
+	return 0;
+}
+#endif
+
