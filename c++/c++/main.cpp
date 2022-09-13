@@ -1,15 +1,24 @@
 #include <stdio.h>
-# define HUNGRY 1
-# define THIRSTY 2
-# define TIRED 4
+# define HUNGRY  0x01
+# define THIRSTY 0x02
+# define TIRED   0x04
+# define FIRE    0x08
+# define COLD    0x10
+# define POISON  0x20
 // 전처리기(define) 1. 가독성 2. 유지보수
+
+// 전역변수
+int Add(int left, int right)
+{
+	return left + right;
+}
 
 int main()
 {
 	// 자료형 (크기 단위, byte / 1byte는 8bit이다.) Data Type
 	// 정수형 : char(1), short(2), int(4), long(4), long long(8)
 	// 실수형 : float, double
-
+	/*
 	int i = 0;
 	unsigned char c = 0; // 1바이트는 0~255까지표현가능, unsigned는 양수만을 의미함
 
@@ -104,15 +113,51 @@ int main()
 
 	unsigned int iStatus = 0;
 
+	// 상태 추가
 	iStatus |= HUNGRY;
 	iStatus |= THIRSTY;
 
+	// 상태 확인
 	if (iStatus & THIRSTY)
 	{
 		 
 	}
 
+	// 특정 자리 비트 제거(암기하는게 좋음)
+	iStatus &= ~THIRSTY; // 반전시켜 곱 연산 해주면 된다.
 	
+
+	// 변수
+	// 1. 지역변수
+	// 2. 전역변수
+	// 3. 정적변수
+	// 4. 외부변수
+
+	// 지역변수
+	int iName = 0;
+	// 괄호 안에 선언된 변수(함수, 지역)
+	{
+		// 변수명 규칙
+		int iName = 100;
+
+		iName; // 100을 의미한다.
+	}
+
+	// 함수
+	data = Add(10, 20); // 가장 앞부분에전역변수로 ADD를 선언했다.
+	*/
+
+	// 반복문
+	// for (/*반복자 초기화*/; /*반복자 조건 체크*/; /*반복자 변경*/)
+
+	for (int i = 0; i < 10; ++i)
+	{
+		printf("Output Test");
+		break;
+	}
+
+	// while()
+
 
 
 	return 0;
