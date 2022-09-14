@@ -1,3 +1,4 @@
+#if 0
 #include <stdio.h>
 # define HUNGRY  0x01
 # define THIRSTY 0x02
@@ -162,3 +163,4 @@ int main()
 
 	return 0;
 }
+#endif
